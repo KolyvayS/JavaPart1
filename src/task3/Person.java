@@ -1,15 +1,11 @@
 package task3;
 
+import lombok.AllArgsConstructor;
+import lombok.ToString;
+
+@AllArgsConstructor
+@ToString(includeFieldNames = true)
 class Person {
-    int age;
     String name;
-
-    Person(int age, String name){
-        this.age = age;
-        this.name = name;
-    }
-
-    public String toString() {
-        return "Name is " + name + ", age is " + age;
-    }
+    int age;
 }

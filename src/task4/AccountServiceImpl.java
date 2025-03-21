@@ -1,11 +1,10 @@
 package task4;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 class AccountServiceImpl implements AccountService {
     private final Account[] accounts;
-
-    public AccountServiceImpl(Account[] array){
-        this.accounts = array;
-    }
 
     @Override
     public Account findAccountByOwnerId(long id){

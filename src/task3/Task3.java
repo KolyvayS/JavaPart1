@@ -2,8 +2,8 @@ package task3;
 
 public class Task3 {
     public static void runTask3() {
-        Person person1 = new Person(20, "Alex");
-        Person person2 = new Person(18, "Jerry");
+        Person person1 = new Person("Alex", 20);
+        Person person2 = new Person("Jerry", 18);
         System.out.println(person1.toString());
         System.out.println(person2.toString());
         changeIdentities( person1, person2);

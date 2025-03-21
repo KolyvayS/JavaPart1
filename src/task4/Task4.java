@@ -13,7 +13,8 @@ public class Task4 {
 
        AccountServiceImpl service = new AccountServiceImpl(accounts);
        System.out.println(service.findAccountByOwnerId(124L));
-       System.out.println(service.countAccountsWithBalanceGreaterThan(100000L));
+       long valueForAccountsCheck = 100000L;
+       System.out.println("Accounts with balance greater than " + valueForAccountsCheck + " - " + service.countAccountsWithBalanceGreaterThan(valueForAccountsCheck));
     }
 }
 
